@@ -1,3 +1,8 @@
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: bold;
+}
+
 body {
   padding-left: 15px;
   font-family: 'Oxygen', sans-serif;
@@ -28,4 +33,24 @@ body {
 @-webkit-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+.car-right {
+  position: absolute;
+  top: 66%;
+  left: -200px;
+  z-index: auto;
+  animation-duration: 4s;
+  animation-name: goRight;
+  animation-iteration-count: infinite;
+}
+
+@keyframes goRight {
+  from {
+    transform: translate(0,0);
+  }
+
+  to {
+    transform: translate(1920px,0);
+  }
 }
