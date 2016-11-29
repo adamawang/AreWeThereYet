@@ -8,11 +8,9 @@
     <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
   </head>
   <body ng-app='maps'>
-    <div class='row container-fluid'>
-      <div class='col-md-3'><h1>Are We There Yet</h1></div>
-      <div><img alt='maps logo' height='80' width='80' src='https://www.seeklogo.net/wp-content/uploads/2015/09/new-google-maps-logo-vector-download.jpg' /></div>
-      <div class='col-md-5'><p>Enter an origin and destination below to see how long it would take to get there!</p></div>
-
+    <div align='center'>
+    <div class=container-fluid>
+    <h1 class="page-header">Are We There Yet<img class="img" height='80' width='80' src="https://www.seeklogo.net/wp-content/uploads/2015/09/new-google-maps-logo-vector-download.jpg" alt="twitter logo"/></h1>
     </div>
 
     <div ng-view></div>
@@ -23,5 +21,10 @@
     <script src="app/app.js"></script>
     <script src="app/search/search.js"></script>
 
+    <footer>
+      <p class='footer'>Powered by Google</p>
+    </footer>
+    </div>
   </body>
+
 </html>

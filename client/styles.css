@@ -3,6 +3,10 @@ body {
   font-family: 'Oxygen', sans-serif;
 }
 
+.footer {
+  font-size: 12px;
+}
+
 .img-rounded {
     -webkit-animation: fadein 5s; /* Safari and Chrome */
     -moz-animation: fadein 5s; /* Firefox */

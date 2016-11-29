@@ -1,8 +1,7 @@
-<div id='container' class='container-fluid' ng-controller='SearchController'>
-  <!-- Your html here -->
+<div id='container' class='container-fluid' ng-controller='SearchController' align='center'>
   <h3>Search Here</h3>
+  <div><p>Enter an origin and destination below to see how long it would take to get there!</p></div>
   <div class="row">
-    <div class="col-md-4">
       <form name="searchForm" ng-submit='search()' method='POST' novalidate>
         <div class="input-group">
           <input type='text'
@@ -31,11 +30,10 @@
             type='submit'
             value='search'
             ng-click='search()'
-            ng-disabled="searchForm.input.$pristine">How long will it take...
+            ng-disabled="searchForm.input.$pristine">Click to see how long will it take!
           </button>
         </div>
       </form>
-    </div>
   </div>
   <div class='lead' ng-show='searchForm.$submitted' class='result'>
     <p>If you are {{ data.mode }}, it will take {{ data.result[0].duration.text }} to get to {{ data.destination }}, {{ data.result[0].distance.text }} away.</p>
