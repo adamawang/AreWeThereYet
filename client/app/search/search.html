@@ -1,0 +1,13 @@
+<div id='container' ng-controller='SearchController'>
+  <!-- Your html here -->
+  <h3>Searches</h3>
+  <form name="searchForm" ng-submit='search()' method='POST' novalidate>
+    <input type='text'
+      ng-model='data.destination'
+      placeholder="Enter address here..."
+      required
+      />
+    <button type='submit' value='search' ng-click='search()'>how long will it take?</button>
+  </form>
+  <div > {{ data.result || 'empty'}} </div>
+</div>

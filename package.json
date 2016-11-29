@@ -1,0 +1,25 @@
+{
+  "name": "mvp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adam Wang",
+  "license": "ISC",
+  "dependencies": {
+    "@google/maps": "^0.3.0",
+    "angular": "^1.6.0-rc.2",
+    "angular-route": "^1.5.9",
+    "body-parser": "^1.15.2",
+    "bootstrap": "^3.3.7",
+    "express": "^4.14.0",
+    "mongoose": "^4.7.0",
+    "morgan": "^1.7.0",
+    "ngmap": "^1.17.8",
+    "path": "^0.12.7",
+    "q": "^1.4.1",
+    "request": "^2.79.0"
+  }
+}
