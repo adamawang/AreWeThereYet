@@ -2,3 +2,26 @@ body {
   padding-left: 15px;
   font-family: 'Oxygen', sans-serif;
 }
+
+.img-rounded {
+    -webkit-animation: fadein 5s; /* Safari and Chrome */
+    -moz-animation: fadein 5s; /* Firefox */
+    animation: fadein 5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
