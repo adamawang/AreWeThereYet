@@ -1,15 +1,44 @@
-<div id='container' ng-controller='SearchController'>
+<div id='container' class='container-fluid' ng-controller='SearchController'>
   <!-- Your html here -->
-  <h3>Searches</h3>
-  <div>Origin is from 1216 Broadway, New York, NY</div>
-  <form name="searchForm" ng-submit='search()' method='POST' novalidate>
-    <input type='text'
-      ng-model='data.destination'
-      placeholder="Enter address here..."
-      required
-      />
-    <button type='submit' value='search' ng-click='search()'>how long will it take?</button>
-  </form>
-  <div > Miles: {{ data.result[0].distance.text || 'empty'}} </div>
-  <div > Time to drive: {{ data.result[0].duration.text || 'empty'}} </div>
+  <h3>Search Here</h3>
+  <div class="row">
+    <div class="col-md-4">
+      <form name="searchForm" ng-submit='search()' method='POST' novalidate>
+        <div class="input-group">
+          <input type='text'
+            class="form-control"
+            name='input'
+            ng-model='data.origin'
+            placeholder="Enter origin address here..."
+            required
+            />
+          <input type='text'
+            class="form-control"
+            name='input'
+            ng-model='data.destination'
+            placeholder="Enter destination address here..."
+            required
+            />
+          <input type='text'
+            class="form-control"
+            name='input'
+            ng-model='data.mode'
+            placeholder="Enter driving, walking, or bicycling..."
+            required
+            />
+          <button
+            class="btn btn-block btn-primary"
+            type='submit'
+            value='search'
+            ng-click='search()'
+            ng-disabled="searchForm.input.$pristine">How long will it take...
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class='lead' ng-show='searchForm.$submitted' class='result'>
+    <p>If you are {{ data.mode }}, it will take {{ data.result[0].duration.text }} to get to {{ data.destination }}, {{ data.result[0].distance.text }} away.</p>
+    <img src='http://www.dailyfreepsd.com/wp-content/uploads/2014/03/Moving-Car-Animation-Photoshop-PSD.gif' />
+  </div>
 </div>
