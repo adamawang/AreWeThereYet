@@ -6,7 +6,7 @@ module.exports = {
   newQuery: function (req, res) {
     // console.log("Running??", req.body.destination);
     googleMapsClient.distanceMatrix({
-      origins: 'Mountain View, CA',
+      origins: '1216 Broadway, New York, NY',
       destinations: req.body.destination,
       units: 'imperial',
       mode: 'driving'
