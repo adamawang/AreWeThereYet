@@ -11,6 +11,8 @@ app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, '../client/index.html'));
 });
 
-app.listen(8000);
+app.set('port', (process.env.PORT || 5000));
+
+app.listen(app.get('port'));
 
 module.exports = app;
