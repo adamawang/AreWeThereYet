@@ -1,5 +1,7 @@
 
-var googleMapsClient = require('../config/maps.js');
+var googleMapsClient = require('@google/maps').createClient({
+  key: process.env.KEY || require('../config/maps.js')
+});
 
 module.exports = {
 
