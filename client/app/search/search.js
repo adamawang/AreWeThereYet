@@ -23,15 +23,9 @@ angular.module('maps.search', [])
   $scope.data = {};
 
   $scope.search = function(address) {
-    // $scope.data.result = Search.search(address);
-    // console.log($scope.data.destination);
     Search.search($scope.data)
     .then(function(res) {
       $scope.data.result = res.data;
     })
-
   }
-
-  // $scope.search();
-
 })
