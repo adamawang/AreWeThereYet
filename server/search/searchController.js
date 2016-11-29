@@ -1,7 +1,5 @@
 
-var googleMapsClient = require('@google/maps').createClient({
-  key: 'AIzaSyBRloXxOKYx6DXkEcmUc3pDbj4I9SobLiA'
-});
+var googleMapsClient = require('../config/maps.js');
 
 module.exports = {
 

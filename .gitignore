@@ -5,6 +5,6 @@
 node_modules/
 
 ## API keys ##
-client/config/maps.js
+server/config/maps.js
 
 notes
