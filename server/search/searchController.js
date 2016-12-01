@@ -12,7 +12,7 @@ module.exports = {
       origins: req.body.origin,
       destinations: req.body.destination,
       units: 'imperial',
-      mode: req.body.mode
+      mode: req.body.mode.toLowerCase()
     }, function(err, response) {
       if (!err) {
         res.json(response.json.rows[0].elements);
