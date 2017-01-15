@@ -42,7 +42,7 @@ body {
   z-index: auto;
   animation-duration: 4s;
   animation-name: goRight;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
 }
 
 @keyframes goRight {

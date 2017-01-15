@@ -1,5 +1,3 @@
-// Google maps API key
-
 angular.module('maps.search', [])
 
 .factory('Search', function($http){
